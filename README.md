@@ -1,4 +1,6 @@
-# Intro to Gulp
+## Intro to Gulp
+
+***This repo contains my notes from an introduction to gulp lecture***
 
 [Gulp](http://gulpjs.com/) is a task runner, used for automating your workflow. *It's like a Makefile on steroids*!
 
@@ -15,14 +17,14 @@ Install globally:
 $ npm install --g gulp
 ```
 
-## Setup
+### Setup
 
-### Install
+#### Install
 
 1. Create a new project using the Galvanize HTML generator
 1. Install Gulp as a dev dependency - `npm install gulp --save-dev`
 
-### gulpfile.js
+#### gulpfile.js
 
 Add *gulpfile.js* file to the project root, and then add the boilerplate code:
 
@@ -38,7 +40,7 @@ This sets up the default task, which can be run with `gulp default` or `gulp`. T
 
 Now we need to add additional tasks, using the [Gulp plugin system](http://gulpjs.com/plugins/).
 
-## Plugins
+### Plugins
 
 Plugins are meant to perform a single job:
 
@@ -51,11 +53,11 @@ Plugins are meant to perform a single job:
 
 For example, you could set up a minification task (`gulp.task`) on all JavaScript files found within the "src/js" folder (`gulp.src`). After the task runs, the files then could be saved to a build folder, like "build/js" (`gulp.dest`). Finally, you could watch (`gulp.watch`) for any chances to the *.js* files found within "src/js", so that when a change occurs to one of the files the minification task (`gulp.task`) is ran.
 
-## Tasks
+### Tasks
 
 So, which tasks should you run?
 
-### Linting
+#### Linting
 
 **gulp-jshint** - `npm install --save-dev gulp-jshint jshint-stylish`
 
@@ -79,7 +81,7 @@ gulp.task('watch', function() {
 gulp.task('default', ['watch']);
 ```
 
-### Running a Server
+#### Running a Server
 
 **gulp-server-livereload** - `npm install --save-dev gulp-server-livereload`
 
@@ -114,7 +116,7 @@ gulp.task('watch', function() {
 gulp.task('default', ['watch', 'webserver']);
 ```
 
-### Other Plugins
+#### Other Plugins
 
 https://github.com/mjhea0/angular-gulp-browserify-seed/blob/master/gulpfile.js
 
