@@ -1,0 +1,22 @@
+{
+  "name": "gulp-intro",
+  "version": "1.0.0",
+  "description": "[Gulp](http://gulpjs.com/) is a task runner, used for automating your workflow. *It's like a Makefile on steroids*!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvece/gulp-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvece/gulp-intro/issues"
+  },
+  "homepage": "https://github.com/elvece/gulp-intro#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
